@@ -16,7 +16,7 @@ export default class Home extends React.Component {
     
     async componentDidMount() {
        
-        const response = await fetch('https://swapi.co/api/films/?format=json')
+        const response = await fetch('https://swapi.dev/api/films/?format=json')
         const responseJson = await response.json()
         this.setState({data: responseJson.results})
     }
